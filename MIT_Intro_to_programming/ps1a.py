@@ -7,6 +7,10 @@
 ## Get user input for yearly_salary, portion_saved and cost_of_dream_home below ##
 ##################################################################################
 
+yearly_salary = float(input("Please enter your yearly salary: \n"))
+portion_saved = float(input("Please enter the portion of your salary that you saved: \n"))
+cost_of_dream_home = float(input("Please enter the cost of your dream home: \n"))
+
 
 #########################################################################
 ## Initialize other variables you need (if any) for your program below ##
