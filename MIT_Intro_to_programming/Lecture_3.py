@@ -1,31 +1,10 @@
-# where = input("Go left or right?")
-# emoji = 0
-# while where=="right":
-#     emoji+= 1
-#     if emoji > 2:
-#         where = input("Go left or right :(? ")
-    
-#     else:
-#         where = input("Go left or right? ")
-
-# print("You got out!")
-
-mysum = 0
-start = 3
-end = 5
-
-for i in range(start,end+1):
-    mysum += i
-
-print(mysum)
-
-#####Finger Exercise########
-n = 5
-for i in range(n):
-    print("hello world")
+# #####Finger Exercise########
+# n = 5
+# for i in range(n):
+#     print("hello world")
 
 ###################
-# Tou can uncomment each of these examples
+# ou can uncomment each of these examples
 # and try running them yourself
 
 # To batch comment/uncomment, select the lines and then
@@ -76,9 +55,16 @@ for i in range(n):
 # Expand this code to show a sad face when the user entered 
 # the while loop more than 2 times. Hint: use a counter
 ###################
-# where = input("Go left or right? ")
-# while where == "right":
-#     where = input("Go left or right? ")
+# where = input("Go left or right?")
+# emoji = 0
+# while where=="right":
+#     emoji+= 1
+#     if emoji > 2:
+#         where = input("Go left or right :(? ")
+    
+#     else:
+#         where = input("Go left or right? ")
+
 # print("You got out!")
 
 
@@ -165,6 +151,16 @@ for i in range(n):
 #     mysum += i
 # print(mysum)
 
+#Corrected the work
+# mysum = 0
+# start = 3
+# end = 5
+
+# for i in range(start,end+1):
+#     mysum += i
+
+# print(mysum)
+
 ###########################################
 
 
@@ -179,13 +175,29 @@ for i in range(n):
 # For ex. if x = 15, it prints 5, 10, and 15. 
 # For ex. if x = 14, it prints 5 and 10.
 
+# x = 15
+# for i in range(5,x+1,5):
+#     print(i)
+
+# x = 14
+# for i in range(5,x,5):
+#     print(i)
+
 
 # Practice 2:
 # Declare a variable n that stores an int. Print the sum of all digits 
 # in n. Hint: you can get a digit at a time looking at the remainder 
 # when you divide n by 10.
 # For ex. If x = 1234, print 10
- 
+
+total = 0
+n = 1234
+for i in range(n+1):
+    r = n % 10
+    total += r
+    
+print(total)
+
 
 
 
