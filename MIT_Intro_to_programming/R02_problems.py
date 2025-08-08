@@ -3,17 +3,20 @@
 # Write a program that takes your name as an Input and Outputs the length of your name minus 5.
 
 # Insert code below
-
+name = input("What is your name: ")
+print(F'Your name has {len(name)-5} letters.')
 
 ####################################################################################
 # Practice Problem 2
 # Write a program to remove the nth character from a non empty string.
 # Print the old string and the new string.
 
-test_string = "We want to remove the nth character from this string"
-n = 8
+# test_string = "We want to remove the nth character from this string"
+# n = 8
 
-# Insert code below
+# # Insert code below
+# print(test_string)
+
 
 
 
@@ -25,7 +28,7 @@ n = 8
 my_string = "This is my string"  # example string - modify to test
 
 # Insert code below
-
+print('True' if 5 < len(my_string) < 10 else 'False')
 
 
 
@@ -37,6 +40,12 @@ my_string = "This is my string"  # example string - modify to test
 my_string = "How many times is the letter e in this string?"
 
 # Insert code below
+numberOfEs = 0
+for i in my_string:
+    if i == 'e':
+        numberOfEs += 1
+print(f'There are {numberOfEs} number of e\'s in the sentence \'{my_string}\'')
+
 
 
 
