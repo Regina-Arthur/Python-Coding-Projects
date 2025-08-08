@@ -192,9 +192,9 @@
 
 total = 0
 n = 1234
-for i in range(n+1):
-    r = n % 10
-    total += r
+casted = str(n)
+for i in casted:
+    total += int(i)
     
 print(total)
 
