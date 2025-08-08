@@ -11,11 +11,18 @@ print(F'Your name has {len(name)-5} letters.')
 # Write a program to remove the nth character from a non empty string.
 # Print the old string and the new string.
 
-# test_string = "We want to remove the nth character from this string"
-# n = 8
+test_string = "We want to remove the nth character from this string"
+n = 8
 
-# # Insert code below
-# print(test_string)
+# Insert code below
+print(test_string)
+
+for i in test_string:
+    remove = test_string[n]
+    if i == remove:
+        test_string.removeprefix(remove)
+        
+print(test_string)
 
 
 
