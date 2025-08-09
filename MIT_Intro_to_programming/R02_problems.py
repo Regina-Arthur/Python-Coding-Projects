@@ -16,16 +16,8 @@ n = 8
 
 # Insert code below
 print(test_string)
-
-for i in test_string:
-    remove = test_string[n]
-    if i == remove:
-        test_string.removeprefix(remove)
-        
-print(test_string)
-
-
-
+new_string= test_string[:n-1] + test_string[n:]
+print(new_string)
 
 ####################################################################################
 # Practice Problem 3
