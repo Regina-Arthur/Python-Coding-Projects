@@ -56,33 +56,33 @@
 #     x+=1
 #     print(to_print)
 
-number = []
-stop = 0
-while stop < 10:
-    num = int(input("Please enter a number:"))
-    number.append(num)
-    stop += 1
+# number = []
+# stop = 0
+# while stop < 10:
+#     num = int(input("Please enter a number:"))
+#     number.append(num)
+#     stop += 1
 
-even = []
-odd = []
-for num in number:
-    if num % 2 == 0:
-        even.append(num)
-    else:
-        odd.append(num)
+# even = []
+# odd = []
+# for num in number:
+#     if num % 2 == 0:
+#         even.append(num)
+#     else:
+#         odd.append(num)
 
-empty = []
-if odd == empty:
-    print("All numbers are even")
+# empty = []
+# if odd == empty:
+#     print("All numbers are even")
 
-else:
-    num = odd[0]
-    position = 0
-    for n in odd:
-        position += 1
-        if num > n:
-            num = num
-        else:
-            num = odd[position-1]
+# else:
+#     num = odd[0]
+#     position = 0
+#     for n in odd:
+#         position += 1
+#         if num > n:
+#             num = num
+#         else:
+#             num = odd[position-1]
 
-    print(F'{num} is the largest odd number.')
+#     print(F'{num} is the largest odd number.')
