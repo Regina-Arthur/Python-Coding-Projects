@@ -23,20 +23,32 @@ r = 0.05
 annual_return = amount_saved * (r/12)
 months = 0
 
+
 ###############################################################################################
 ## Determine how many months it would take to get the down payment for your dream home below ## 
 ###############################################################################################
-while amount_saved != cost_of_down_payment:
+while amount_saved < cost_of_down_payment:
+    print(amount_saved)
     if months > 0:
-        monthly_salary += monthly_salary * 0.1
+        monthly_salary += (monthly_salary * 0.1)
+        print("monthly salary when greater than zero",monthly_salary)
 
     else:
         monthly_salary = monthly_salary
+        print("monthly salary when zero",monthly_salary)
     
     amount_saved += monthly_salary * portion_saved
+    print('amount saved',amount_saved)
     annual_return = amount_saved * (r/12)
+    print('annual_return',annual_return)
     amount_saved += annual_return
+    print('amount saved that month',amount_saved)
     months += 1 
+    if months ==100:
+        break
+
+
+print(months)
         
 
 
